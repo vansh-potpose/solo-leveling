@@ -1,0 +1,84 @@
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.flex-gap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.hline{
+    width: 94%;
+    background-color: #4b4b4b;
+    height: 2px;
+    margin: 10px 3%;
+}
+.vline{
+    height: 94%;
+    background-color: #4b4b4b;
+    width: 2px;
+    margin: 3% 10px;
+}
+/* Universal scrollbar styles */
+* {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent; /* Firefox */
+}
+
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background for the track */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5); /* More opaque on hover */
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background: rgba(255, 255, 255, 0.7); /* Even more opaque when active (clicked) */
+}
+.habit-container::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.habit-container {
+    scrollbar-width: none; /* Hide the scrollbar */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge (Legacy) */
+.habit-container {
+    -ms-overflow-style: none; /* Hide the scrollbar */
+}
+
+
+.right::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.right {
+    scrollbar-width: none; /* Hide the scrollbar */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge (Legacy) */
+.right {
+    -ms-overflow-style: none; /* Hide the scrollbar */
+}

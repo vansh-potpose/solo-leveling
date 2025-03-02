@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+    
+    fetch('http://localhost:3001/')
+    .then(response => response.json())
+    .then(data => {
+        const container = document.querySelector(".container");
+                container.innerHTML = ''; // Clear any previous content
+
+                data.forEach(tasks => {
+                    const taskDiv = document.createElement('div');
+                    taskDiv.innerHTML = '<h3>Tasks:</h3>';
+                    for (const [taskKey, taskValue] of Object.entries(tasks)) {
+                        const taskDetail = document.createElement('div');
+                        
+                        taskDetail.innerHTML = `<strong>${taskKey}:</strong> ${taskValue.join(', ')}`;
+                        taskDiv.appendChild(taskDetail);
+                    }
+                    container.appendChild(taskDiv); });
+    })
+    .catch(err => console.error('Error fetching data:', err));
+        </script>
+</body>
+</html>

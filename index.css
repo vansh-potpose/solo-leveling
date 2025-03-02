@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins", sans-serif;
+    color:white;
+}
+.body-container{
+    display: flex;
+    background-color: black;
+}
+.left{
+    border-radius: 10px;
+    width: 15vw;
+    height: calc(100vh - 10px);
+    margin:5px 0px 5px 5px;
+    background-color: rgb(13, 13, 13);
+}
+.profile{
+    max-width: 200px;
+}
+.profile-info{
+    min-height: 250px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+.profile img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.setting img {
+    width: 27px;
+    height: 27px;
+    margin-left: 3px;
+}
+.notification img{
+    width: 31px;
+    height: 31px;
+}
+
+
+.left ol li{
+    list-style: none;
+    
+}
+.left ol li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* mid section */
+.mid{
+    height: calc(100vh - 30px);
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    background-color: rgb(13, 13, 13);
+    color: white;
+    width: 30vw;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+.Habitbar{
+    height: 100%;
+    width: 98%;
+    max-width: 375px;
+}
+.habit-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.habit-head .add{
+    background: none;
+    border: none;    
+}
+.habit-head img{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.save-btn{
+    background-color: #595757;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+.save-btn:hover{
+    background-color: #9b9089d3;
+}
+.save-btn:active{
+    background-color: #3ed41cd3;
+   
+}
+
+.habit-container{
+    height: calc(100% - 100px); 
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+.habit{
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid #3f3f3f;
+    border-radius: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.habit-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.habit-info p{
+    max-width: 210px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.habit-info img{
+    width: 30px;
+    height: 30px;
+}
+.habit-points{
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px
+}
+
+.total-point{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Taskbar{
+    
+    height: calc(100% - 20px);
+    width: 43%;
+    max-width: 315px;
+    
+}
+.task-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.task-head button{
+    background: none;
+    border: none;    
+}
+.task-head img{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.task-contianer{
+    background-color: black;
+    border-radius: 7px;
+    padding: 10px;
+    max-height: calc(100% - 100px); 
+    min-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+.task{
+    max-width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid #3f3f3f;
+    border-radius: 10px;
+    padding: 8px 10px;
+}
+.task-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.task-info p{
+    max-width: 180px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.task-info button{
+    background:none;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+.task-info img{
+    width: 30px;
+    height: 30px;
+}
+/* right side of window */
+.right{
+    height: calc(100vh - 30px);
+    background-color: rgb(13, 13, 13);
+    color: white;
+    width: 50vw;
+    border-radius: 10px;
+    margin: 5px 5px 5px 0px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.Statistics{
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 20px;
+    cursor: pointer;
+}
+select {
+    position: absolute;
+    top: 10px;
+    right:10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    color: black;
+    font-weight: 600;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+option {
+    background-color: #f2f2f2;
+    color: black;
+    font-weight: 500;
+}
+
+#myChart {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    height: 600px;
+}
+
+.calender-container {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    
+}
+
+.calendar {
+    width: 100%;
+    background-color: #000;
+    color: #fff; 
+    border-radius: 8px;
+    padding: 20px;
+    
+}
+
+.month {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* gap: 0px; */
+}
+
+.day {
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #000; 
+    font-size: 0.9em; 
+}
+
+.today {
+    background-color: #29d131;
+    color: #000; 
+}
+
+.day:hover {
+    background-color: #333; 
+    cursor: pointer;
+}
+.progress-bar-container{
+    background-color: #000;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+.progress-bar-container h3{
+    padding: 10px 0px 0px 10px;
+}
+.progress{
+    display: flex;
+    align-items: center;
+    
+}
+.progress-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+
+.progress-container {
+    background-color: #000;
+    border-radius: 10px;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    
+}
+.progress-circle {
+    transform: rotate(-90deg);
+}
+.progress-background,
+.progress-bar {
+    fill: none;
+    stroke-width: 10;
+}
+.progress-background {
+    stroke: rgba(255, 255, 255, 0.2);
+}
+.progress-bar {
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease-in-out;
+    transform: rotate(0deg);
+    transform-origin: center;
+    filter: drop-shadow(0 0 10px rgba(108, 53, 210, 0.5));
+}
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
